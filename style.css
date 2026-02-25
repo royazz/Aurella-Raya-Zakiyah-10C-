@@ -1,0 +1,133 @@
+body {
+background-color:rgb(152, 176, 187);
+font-family: Arial, sans-serif;
+color: #0b203a;
+margin: 20px;
+}
+nav {
+   background-color: #95abc0;
+   font-size: large;
+}
+h1 {
+color: #52669c;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+color: #557596;
+text-align: left;
+}
+p {
+font-size: 18px;
+text-align: left;
+line-height: 1.5;
+}
+.daftar-produk{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+   gap: 20px;
+   padding: 20px; 
+}
+.produk{
+   background-color: #dae8f1;
+   border: 1px solid #ffffff7c;
+   padding: 15px;
+   border-radius: 10px;
+text-align: center;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.produk img {
+   width: 150px;
+   height: auto;
+   border-radius: 5px;
+   margin-bottom: 10px; 
+}
+.produk h2 {
+   font-size: 20px;
+   color: #376a9c;
+} 
+.produk h3 {
+   font-size: 16px;
+   color: #7fabd8;
+}
+.harga {
+   font-weight: bold;
+   color: #27ae60;
+}
+.deskripsi {
+   font-size: 14px;
+   color: #555;
+}
+.artikel { 
+   max-width: 700px;
+   margin: auto;
+   padding: 20px;
+   background-color: #ffffff;
+   font-family: Georgia, serif;
+
+   line-height: 1.8;
+}
+.artikel .penulis {
+   font-style: italic;
+   color: #b9b9b9;
+   margin-bottom: 20px;
+}
+.artikel .sampul {
+   width: 180px;
+   float: right;
+   margin: 0  0  20px 20px;
+   border: 1px solid #8f8f8f;
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.artikel blockquote {
+   font-style: italic;
+   padding-left: 20px;
+   margin: 20px 0;
+   border-left: 4px solid #969696;
+   color: #444;
+   background-color: #ffffff;
+}
+.btn-kembali {
+   display: inline-block;
+   margin-top: 30px;
+   padding: 10px 16px;
+   background-color: #285275;
+   color: white;
+   text-decoration: none;
+   border-radius: 4px;
+}
+.btn-kembali:hover {
+   background-color: #004d99;
+}
+.formulir {
+   max-width: 600px;
+   margin: auto;
+   padding: 20px;
+   background-color: #f5f5f5;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(196, 196, 196, 0.1);
+}
+form label {
+   display: block;
+   margin-top: 10px;
+   font-weight: bold;
+}
+form input, form select, form textarea {
+   width: 100%;
+   padding: 8px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   border-radius: 5px;
+   border: 1px solid #727272;
+}
+form button {
+   background-color: #7fabd8;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+form button:hover {
+   background-color: #375477;
+}
