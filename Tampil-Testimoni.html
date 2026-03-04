@@ -23,20 +23,18 @@
         <div id="daftarTestimoni"></div>
     </section>
    </main>
-
    <footer>
     <p>&copy; 2026 Toko Buku Aurella Raya</p>
    </footer>
-
 <script>
     const container = document.getElementById(`daftarTestimoni`);
-    const testimoniList = JSON.parse(localStorage.getItem(`testimoniList`)) || [];
+    const testimoniList = JSON.parse(localStorage.getItem('testimoniList')) || [];
     if (testimoniList.length === 0){
         container.innerHTML ="<p>Belum ada testimoni.</p>";
     }else{
         testimoniList.forEach((t, i)=> {
         const el = document.createElement('div');
-        el.className = 'testimoni-box'
+        el.className = 'testimoni-box';
         el.innerHTML = `
         <p><strong>Nama:</strong> ${t.nama}</p>
         <p><strong>Asal:</strong> ${t.asal}</p>
@@ -49,14 +47,14 @@
         });
     }
     document.getElementById("hapusSemua").addEventListener("click", function() {
-    const konfirmasi = confirm("Apakah Anda yakin ingin menghapus semua testimoni?")
+    const konfirmasi = confirm("Apakah Anda yakin ingin menghapus semua testimoni?");
     if (konfirmasi) {
         localStorage.removeItem("testimoniList");
         location.reload();
     }
       });
 </script>
-
+  
 </body>
-
 </html>
+
