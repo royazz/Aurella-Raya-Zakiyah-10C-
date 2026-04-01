@@ -131,3 +131,121 @@ form button {
 form button:hover {
    background-color: #375477;
 }
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#eef4ff;
+}
+
+/* HEADER */
+header{
+background:#2b6cff;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* MAIN */
+main{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+/* BOX KONTAK */
+.kontak-box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+margin-bottom:25px;
+}
+
+h2{
+color:#2b6cff;
+}
+
+/* FORM */
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:6px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#2b6cff;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1e4fd6;
+}
+
+/* FOOTER */
+footer{
+background:#2b6cff;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+.judul-event{
+text-align:center;
+padding:30px;
+}
+.judul-event h2{
+color:#2b6cff;
+}
+
+.event-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.event-card{
+background:white;
+padding:20px;
+width:280px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.event-card h3{
+color:#2b6cff;
+}
+
+.event-card button{
+background:#2b6cff;
+color:white;
+border:none;
+padding:10px;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.event-card button:hover{
+background:#1e4fd6;
+}
