@@ -1,7 +1,7 @@
 body{
 font-family:Arial, sans-serif;
 margin:0;
-background:#eef4ff;
+background:#f4f6fb
 }
 
 /* HEADER */
@@ -15,7 +15,7 @@ object-fit:cover;
 /* NAVBAR */
 
 nav{
-background:#2b6cff;
+background:#4c5c8a;
 padding:15px;
 text-align:center;
 }
@@ -39,8 +39,7 @@ padding:40px 20px;
 }
 
 .hero h1{
-color:#2b6cff;
-}
+color:#4c5c8a;
 
 .tombol-container{
 display:flex;
@@ -51,7 +50,7 @@ margin-top:20px;
 }
 
 .btn-biru{
-background:#2b6cff;
+background:#4c5c8a;
 color:white;
 padding:12px 22px;
 border-radius:8px;
@@ -61,7 +60,7 @@ transition:0.3s;
 }
 
 .btn-biru:hover{
-background:#1e4fd6;
+background:#3a4a75;
 transform:scale(1.05);
 }
 
@@ -93,7 +92,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .kategori-card h3{
-color:#2b6cff;
+color:#4c5c8a
 }
 
 /* FOOTER */
@@ -112,7 +111,7 @@ margin-top:40px;
    padding: 20px; 
 }
 .produk{
-   background-color: #dae8f1;
+   background-color: #4c5c8a;
    border: 1px solid #ffffff7c;
    padding: 15px;
    border-radius: 10px;
