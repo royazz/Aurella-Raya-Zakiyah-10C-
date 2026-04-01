@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Toko Buku Aurella Raya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Toko Buku Aurella Raya</h1>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="bedah-buku.html">Bedah Buku</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="tampil-testimoni.html">Tampil Testimoni</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="event.html">Event</a>
+  </nav>
+</header>
+
+<main class="formulir">
+  <section>
+    <h2>Hubungi Kami</h2>
+    <p><strong>Alamat:</strong> Jl. Sukodono,Sidoarjo</p>
+    <p><strong>Email:</strong> aurellaraya29@email.com</p>
+    <p><strong>No. WhatsApp:</strong> 0812-3456-7890</p>
+    <p><strong>Jam Operasional:</strong> 08.00 - 23.00 WIB</p>
+  </section>
+
+  <form id="formKontak">
+    <label>Nama:</label><br>
+    <input type="text" id="nama" name="nama" required placeholder="nama Lengkap">
+
+    <label>Email:</label><br>
+    <input type="email" id="email" name="email" required placeholder="email@example.com">
+
+    <label>Pesan:</label><br>
+    <textarea id="pesan" name="pesan" required placeholder="tulis pesan anda.." rows="5">
+    </textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+
+  <div id="notifikasi"></div>
+</main>
+
+<footer>
+  <p>&copy; 2026 Toko Buku Aurella Raya</p>
+</footer>
+
+<script>document.getElementById("formKontak").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
+
+    if(nama && email && pesan){
+      document.getElementById("notifikasi").innerHTML =
+        "<p style='color:green;'>Pesan berhasil dikirim!</p>";
+      this.reset();
+    } else {
+      document.getElementById("notifikasi").innerHTML =
+        "<p style='color:red;'>Semua field harus diisi!</p>";
+    }
+  });
+</script> 
+</body>
+</html>
